@@ -26,6 +26,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.bitbucket_username -%}
+    <li>
+      <a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}">
+        <i class="fab fa-bitbucket"></i>
+	<span class="username">Bitbucket</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.instagram_username -%}
     <li>
       <a href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}">
