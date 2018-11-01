@@ -20,6 +20,7 @@ gem 'minima', '~> 2.5'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'jekyll-font-awesome-sass', '~> 0.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
