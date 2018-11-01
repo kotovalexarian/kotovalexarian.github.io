@@ -70,4 +70,13 @@
       </a>
     </li>
   {%- endif -%}
+
+  {%- if site.amazon_profile -%}
+    <li>
+      <a href="https://www.amazon.com/gp/profile/{{ site.amazon_profile | cgi_escape | escape }}">
+        <i class="fab fa-amazon"></i>
+	<span class="username">Amazon</span>
+      </a>
+    </li>
+  {%- endif -%}
 </ul>
