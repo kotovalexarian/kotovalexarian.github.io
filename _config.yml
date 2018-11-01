@@ -28,9 +28,7 @@ gitlab_username:    kotovalexarian
 facebook_username:  kotovalexarian
 instagram_username: kotovalexarian
 telegram_username:  kotovalexarian
-
-youtube_channel: UC5X22dzwK6Gk0mMG66iW4zg
-youtube_channel_name: Alex Kotov
+youtube_channel:    UC5X22dzwK6Gk0mMG66iW4zg
 
 # Build settings
 markdown: kramdown
