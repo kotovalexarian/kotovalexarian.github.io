@@ -34,8 +34,7 @@ youtube_channel:    UC5X22dzwK6Gk0mMG66iW4zg
 markdown: kramdown
 theme: minima
 
-plugins:
-  - 'jekyll-font-awesome-sass'
+plugins: []
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
