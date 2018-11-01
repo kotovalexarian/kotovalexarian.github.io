@@ -79,4 +79,13 @@
       </a>
     </li>
   {%- endif -%}
+
+  {%- if site.pocket_username -%}
+    <li>
+      <a href="https://getpocket.com/@{{ site.pocket_username | cgi_escape | escape }}">
+        <i class="fab fa-get-pocket"></i>
+	<span class="username">Pocket</span>
+      </a>
+    </li>
+  {%- endif -%}
 </ul>
