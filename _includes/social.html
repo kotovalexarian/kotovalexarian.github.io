@@ -1,4 +1,22 @@
 <ul class="social-media-list">
+  {%- if site.amazon_profile -%}
+    <li>
+      <a href="https://www.amazon.com/gp/profile/{{ site.amazon_profile | cgi_escape | escape }}">
+        <i class="fab fa-amazon"></i>
+	<span class="username">Amazon</span>
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if site.bitbucket_username -%}
+    <li>
+      <a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}">
+        <i class="fab fa-bitbucket"></i>
+	<span class="username">Bitbucket</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.facebook_username -%}
     <li>
       <a href="https://www.facebook.com/{{ site.facebook_username | cgi_escape | escape }}">
@@ -26,20 +44,29 @@
     </li>
   {%- endif -%}
 
-  {%- if site.bitbucket_username -%}
-    <li>
-      <a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}">
-        <i class="fab fa-bitbucket"></i>
-	<span class="username">Bitbucket</span>
-      </a>
-    </li>
-  {%- endif -%}
-
   {%- if site.instagram_username -%}
     <li>
       <a href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}">
         <i class="fab fa-instagram"></i>
 	<span class="username">Instagram</span>
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if site.pocket_username -%}
+    <li>
+      <a href="https://getpocket.com/@{{ site.pocket_username | cgi_escape | escape }}">
+        <i class="fab fa-get-pocket"></i>
+	<span class="username">Pocket</span>
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if site.telegram_username -%}
+    <li>
+      <a href="https://t.me/{{ site.telegram_username | cgi_escape | escape }}">
+        <i class="fab fa-telegram"></i>
+	<span class="username">Telegram</span>
       </a>
     </li>
   {%- endif -%}
@@ -58,33 +85,6 @@
       <a href="https://www.youtube.com/channel/{{ site.youtube_channel | cgi_escape | escape }}">
         <i class="fab fa-youtube"></i>
 	<span class="username">YouTube</span>
-      </a>
-    </li>
-  {%- endif -%}
-
-  {%- if site.telegram_username -%}
-    <li>
-      <a href="https://t.me/{{ site.telegram_username | cgi_escape | escape }}">
-        <i class="fab fa-telegram"></i>
-	<span class="username">Telegram</span>
-      </a>
-    </li>
-  {%- endif -%}
-
-  {%- if site.amazon_profile -%}
-    <li>
-      <a href="https://www.amazon.com/gp/profile/{{ site.amazon_profile | cgi_escape | escape }}">
-        <i class="fab fa-amazon"></i>
-	<span class="username">Amazon</span>
-      </a>
-    </li>
-  {%- endif -%}
-
-  {%- if site.pocket_username -%}
-    <li>
-      <a href="https://getpocket.com/@{{ site.pocket_username | cgi_escape | escape }}">
-        <i class="fab fa-get-pocket"></i>
-	<span class="username">Pocket</span>
       </a>
     </li>
   {%- endif -%}
