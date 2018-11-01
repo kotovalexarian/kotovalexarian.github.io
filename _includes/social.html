@@ -44,6 +44,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.google_plus_profile -%}
+    <li>
+      <a href="https://plus.google.com/{{ site.google_plus_profile | cgi_escape | escape }}">
+        <i class="fab fa-google-plus-g"></i>
+	<span class="username">Google+</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.instagram_username -%}
     <li>
       <a href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}">
