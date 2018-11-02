@@ -62,6 +62,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.linkedin_profile -%}
+    <li>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_profile | cgi_escape | escape }}">
+        <i class="fab fa-linkedin"></i>
+	<span class="username">LinkedIn</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.pocket_username -%}
     <li>
       <a href="https://getpocket.com/@{{ site.pocket_username | cgi_escape | escape }}">
