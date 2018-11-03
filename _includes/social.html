@@ -80,6 +80,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.quora_profile -%}
+    <li>
+      <a href="https://www.quora.com/profile/{{ site.quora_profile | cgi_escape | escape }}">
+        <i class="fab fa-quora"></i>
+	<span class="username">Quora</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.reddit_username -%}
     <li>
       <a href="https://www.reddit.com/user/{{ site.reddit_username | cgi_escape | escape }}">
