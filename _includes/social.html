@@ -80,6 +80,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.reddit_username -%}
+    <li>
+      <a href="https://www.reddit.com/user/{{ site.reddit_username | cgi_escape | escape }}">
+        <i class="fab fa-reddit"></i>
+	<span class="username">Reddit</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.stackoverflow_story -%}
     <li>
       <a href="https://stackoverflow.com/story/{{ site.stackoverflow_story | cgi_escape | escape }}">
