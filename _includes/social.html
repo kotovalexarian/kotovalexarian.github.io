@@ -98,6 +98,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.skype_link -%}
+    <li>
+      <a href="https://join.skype.com/invite/{{ site.skype_link | cgi_escape | escape }}">
+        <i class="fab fa-skype"></i>
+	<span class="username">Skype</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.stackoverflow_story -%}
     <li>
       <a href="https://stackoverflow.com/story/{{ site.stackoverflow_story | cgi_escape | escape }}">
