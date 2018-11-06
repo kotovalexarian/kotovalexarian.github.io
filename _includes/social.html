@@ -134,6 +134,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.vk_username -%}
+    <li>
+      <a href="https://vk.com/{{ site.vk_username | cgi_escape | escape }}">
+        <i class="fab fa-vk"></i>
+	<span class="username">VK</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.youtube_channel -%}
     <li>
       <a href="https://www.youtube.com/channel/{{ site.youtube_channel | cgi_escape | escape }}">
