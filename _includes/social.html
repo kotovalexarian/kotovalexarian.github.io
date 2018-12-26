@@ -71,6 +71,14 @@
     </li>
   {%- endif -%}
 
+  {%- if site.kinopoisk_username -%}
+    <li>
+      <a href="https://mykp.ru/{{ site.kinopoisk_username | cgi_escape | escape }}">
+        <span class="username">KinoPoisk</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.linkedin_profile -%}
     <li>
       <a href="https://www.linkedin.com/in/{{ site.linkedin_profile | cgi_escape | escape }}">
