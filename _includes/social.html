@@ -124,6 +124,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.soundcloud_username -%}
+    <li>
+      <a href="https://soundcloud.com/{{ site.soundcloud_username | cgi_escape | escape }}">
+        <i class="fab fa-soundcloud"></i>
+        <span class="username">SoundCloud</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.stackoverflow_story -%}
     <li>
       <a href="https://stackoverflow.com/story/{{ site.stackoverflow_story | cgi_escape | escape }}">
