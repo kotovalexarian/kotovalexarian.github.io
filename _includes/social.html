@@ -8,6 +8,15 @@
     </li>
   {%- endif -%}
 
+  {%- if site.bandcamp_username -%}
+    <li>
+      <a href="https://bandcamp.com/{{ site.bandcamp_username | cgi_escape | escape }}">
+        <i class="fab fa-bandcamp"></i>
+        <span class="username">Bandcamp</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if site.bitbucket_username -%}
     <li>
       <a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}">
